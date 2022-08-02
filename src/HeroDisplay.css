@@ -1,0 +1,190 @@
+.HeroDisplay{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.HeroDisplay-overlay{
+    background: rgba(0,0,0,0.7);
+    z-index: -99;
+}
+
+.HeroDisplay-bg{
+    position: absolute;
+    left: -1rem;
+    max-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+.HeroDisplay-hero-container{
+    width: 100%;
+    max-width: 50vw;
+    max-height: 50vh;
+    transform: skew(-5deg) rotate(-5deg); 
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    border: 10px solid;
+    border-right: none;
+    border-image: linear-gradient(to right, #C9C9C9, #676968) 1;
+    overflow-y: hidden;
+}
+
+.HeroDisplay-btn{
+    width: 15vw;
+    border: 5px #f4f4f4 solid;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.ff-0{
+    object-position: 70% -9.2rem;
+}
+
+.ff-1{
+    object-position: 60% -5rem;
+}
+
+.ff-2{
+    object-position: 45% -5rem;
+}
+
+.ff-3{
+    object-position: 50% -5rem;
+}
+
+.ff-4{
+    object-position: 90% -6rem;
+}
+
+.ff-5{
+    object-position: 60% -6rem;
+}
+
+.ff-6{
+    object-position: 32% -1rem;
+}
+
+.ff-7{
+    object-position: 50% 2rem;
+}
+
+.ff-8{
+    object-position: 28% 2.5rem;
+}
+
+.ff-9{
+    object-position: 30% 1.5rem;
+}
+
+.ff-10{
+    object-position: 43% 1rem;
+}
+
+.ff-11{
+    object-position: 75% -6rem;
+}
+
+.ff-12{
+    object-position: 40% 4rem;
+    object-fit: contain;
+}
+
+.ff-13{
+    object-position: 50% 1rem;
+}
+
+.ff-14{
+    object-position: 83% 2rem;
+}
+
+.ff-15{
+    object-position: 80% 2rem;
+    border-right: none;
+}
+
+@media(max-width: 800px){
+    .HeroDisplay{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .HeroDisplay-hero-container{
+        position: relative;
+        top: 4rem;
+        padding-top: 5rem;
+        max-height: 100vh;
+        max-width: 100vw;
+        transform: skew(0) rotate(0); 
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        overflow-y: scroll;
+        border: none;
+        gap: 2.5rem;
+
+    }
+
+    .HeroDisplay-btn{
+        width: 30%;
+        height: 350px;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        border: 10px solid;
+        border-image: linear-gradient(to right, #C9C9C9, #676968) 1;
+    }
+}
+
+@media(max-width: 600px){
+    .HeroDisplay{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .HeroDisplay-hero-container{
+        position: relative;
+        top: 4rem;
+        padding-top: 5rem;
+        max-width: 100vw;
+        max-height: 100vh;
+        transform: skew(0) rotate(0); 
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: 2.5rem;
+        overflow-y: scroll;
+        border: none;
+        margin: 0 auto;
+    }
+
+    .HeroDisplay-btn{
+        position: relative;
+        width: 50%;
+        height: 400px;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        border: 10px solid;
+        border-image: linear-gradient(to right, #C9C9C9, #676968) 1;
+    }
+}

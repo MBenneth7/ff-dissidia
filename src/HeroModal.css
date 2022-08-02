@@ -1,0 +1,234 @@
+.HeroModal{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 950px;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    color: black;
+}
+
+.HeroModal-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.HeroModal-info-container{
+    margin-top : 3rem;
+    margin-left: 1rem;
+    gap: .5rem;
+    width: 40%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.HeroModal-info-container h1{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.HeroModal-info-container h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.HeroModal-info-container p{
+    line-height: 1.5rem;
+    font-size: 1.0rem;
+}
+
+.HeroModal-info-container-btn{
+    justify-self: flex-end;
+    margin-top: auto;
+}
+
+.HeroModal-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+
+.HeroModal-img{
+    max-width: 90%;
+    height: 80vh;
+    object-fit: scale-down;
+}
+
+@media(max-width: 800px){
+
+    .HeroModal{
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        max-width: 950px;
+        height: 80vh;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 25px;
+        color: black;
+    }
+
+    .HeroModal-info-container{
+        margin-top : 3rem;
+        margin-left: 1rem;
+        gap: .5rem;
+        width: 40%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .HeroModal-info-container h1{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    .HeroModal-info-container h3{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+    .HeroModal-info-container p{
+        line-height: 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .HeroModal-info-container-btn{
+        justify-self: flex-end;
+        margin-top: auto;
+    }
+    
+    .HeroModal-img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+    }
+    
+    .HeroModal-img{
+        max-width: 90%;
+        height: 80vh;
+        object-fit: scale-down;
+    }
+}
+
+@media(max-width: 600px){
+
+
+    .HeroModal-info-container{
+        margin-top : 3rem;
+        margin-left: 1rem;
+        gap: .5rem;
+        width: 40%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .HeroModal-info-container h1{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    .HeroModal-info-container h3{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .HeroModal-info-container p{
+        line-height: 1.2rem;
+        font-size: 0.8rem;
+    }
+    
+    .HeroModal-info-container-btn{
+        justify-self: flex-end;
+        margin-top: auto;
+    }
+    
+    .HeroModal-img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+    }
+    
+    .HeroModal-img{
+        max-width: 95%;
+        height: 80vh;
+        object-fit: scale-down;
+    }
+}
+
+@media(max-width: 450px){
+
+    .HeroModal{
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 950px;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 25px;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .HeroModal-info-container{
+        margin-top : 3rem;
+        margin-left: 1rem;
+        gap: .5rem;
+        width: 70%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+    }
+    .HeroModal-info-container h1{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    .HeroModal-info-container h3{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .HeroModal-info-container p{
+        line-height: 1.2rem;
+        font-size: 0.8rem;
+        overflow-y: scroll;
+    }
+    
+    .HeroModal-info-container-btn{
+        justify-self: flex-end;
+        margin-top: auto;
+    }
+    
+    .HeroModal-img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+    }
+    
+    .HeroModal-img{
+        position: relative;
+        bottom: 5rem;
+        max-width: 95%;
+        height: 80vh;
+        object-fit: scale-down;
+    }
+}

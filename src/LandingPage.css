@@ -1,0 +1,228 @@
+.LandingPage{
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: 0.5s;
+    /* position: relative; */
+    /* background: url("./assets/images/dissidia-wall.png") no-repeat center center fixed;
+    background-size: cover;*/
+}
+
+.LandingPage-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* transition: 0.5s; */
+}
+
+.LandingPage-nav{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.LandingPage-nav ul{
+  position: relative;
+  display: flex;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.LandingPage-nav ul li{
+  list-style: none;
+}
+
+.LandingPage-nav h1{
+  color: white;
+  margin-left: 2rem;
+  margin-top: 0.3rem;
+  opacity: 0;
+}
+
+.LandingPage-nav ul li a{
+  color: #fff;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: 0.5s ease-in-out
+}
+
+.LandingPage-nav ul li a:hover{
+  color: #868787;
+}
+
+.LandingPage-sticky .LandingPage-nav-active ul{
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  height: calc(40% - 70px);
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  visibility: visible;
+  opacity: 1;
+}
+
+.LandingPage-sticky .LandingPage-about{
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  height: calc(40% - 70px);
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  visibility: visible;
+  opacity: 1;
+  color: white;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.LandingPage-sticky .LandingPage-nav-active ul li a{
+  color: white;
+}
+
+
+.LandingPage-sticky{
+  position: relative;
+  top: 4.5rem;
+  height: 75px;
+  z-index: 1;
+  /* transition: 0.5s; */
+}
+
+.LandingPage-sticky nav ul{
+  opacity: 1;
+}
+
+.LandingPage-sticky h1{
+  opacity: 1;
+}
+
+@media(max-width: 700px){
+
+  .LandingPage-sticky nav ul{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .LandingPage-sticky .LandingPage-toggle{
+    position: fixed;
+    top: 13px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: rgb(239, 237, 237) url("./assets/images/menu.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .LandingPage-sticky .LandingPage-toggleMenu{
+    position: fixed;
+    top: 13px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: rgb(239, 237, 237) url("./assets/images/close.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+
+}
+
+
+/*POTENTIAL VIDEO BG*/
+
+.LandingPage-intro{
+    position: absolute;
+    object-fit: cover;
+    height: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.LandingPage-intro img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.LandingPage iframe{
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    padding: 0;
+    margin: 0; */
+    /* width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1; */
+    position: absolute;
+    width: 100%;
+    height: calc((100vw*9)/16);
+    z-index: -1;
+    
+}
+
+/* @media (min-aspect-ratio: 16/9) {
+    .LandingPage iframe {  */
+      /* height = 100 * (9 / 16) = 56.25*/
+      /* height: 56.25vw;   */
+      /* height: 56.25vw; 
+    }
+  }  */
+
+/* @media (max-aspect-ratio: 16/9) {
+.LandingPage iframe { */
+    /* width = 100 / (9 / 16) = 177.777777*/
+    /* width: 177.78vh;  */
+    /* width: 160vh;
+}
+}  */
+/* 
+@media (max-aspect-ratio: 16/9) {
+    .LandingPage{
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    .LandingPage iframe{
+      width: calc((100vh*16)/9);
+      height: 100vh;
+      }
+  } */
